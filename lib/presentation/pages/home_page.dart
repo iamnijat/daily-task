@@ -2,21 +2,21 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 import 'package:tab_indicator_styler/tab_indicator_styler.dart';
-import 'package:task_project/clippers/wave_clipper.dart';
-import 'package:task_project/widgets/home/bottom_navigation.dart';
-import 'package:task_project/widgets/home/card_bubble.dart';
-import 'package:task_project/widgets/home/home_search_bar.dart';
-import 'package:task_project/widgets/home/home_slider.dart';
+import '../clippers/wave_clipper.dart';
+import '../widgets/home/bottom_navigation.dart';
+import '../widgets/home/card_bubble.dart';
+import '../widgets/home/home_search_bar.dart';
+import '../widgets/home/home_slider.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({Key key}) : super(key: key);
 
   @override
   State<HomePage> createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
-  TabController? _controller;
+  TabController _controller;
   List avatars = [];
 
   // Loading json file
@@ -53,15 +53,6 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
           backgroundColor: const Color.fromRGBO(137, 170, 250, 1),
           elevation: 0.0,
           bottomOpacity: 0.0,
-
-          /*flexibleSpace: ClipPath(
-          clipper: WaveClipperTwo(),
-          child: Container(
-            height: 15.h, //250
-            width: MediaQuery.of(context).size.width,
-            color: const Color.fromRGBO(137, 170, 250, 1),
-          ),
-        ),*/
         ),
         body: Column(
           children: <Widget>[

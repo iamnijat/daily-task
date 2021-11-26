@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class CustomShapeBorder extends ContinuousRectangleBorder {
   @override
-  Path getOuterPath(Rect rect, {TextDirection? textDirection}) {
+  Path getOuterPath(Rect rect, {TextDirection textDirection}) {
     const double innerCircleRadius = 50.0;
 
     Path path = Path();

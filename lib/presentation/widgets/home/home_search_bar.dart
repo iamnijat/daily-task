@@ -3,7 +3,7 @@ import 'package:sizer/sizer.dart';
 
 class HomeSearchBar extends StatelessWidget {
   const HomeSearchBar({
-    Key? key,
+    Key key,
   }) : super(key: key);
 
   @override

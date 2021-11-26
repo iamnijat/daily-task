@@ -3,9 +3,9 @@ import 'package:sizer/sizer.dart';
 
 class CardBubble extends StatelessWidget {
   const CardBubble({
-    Key? key,
-    required this.avatars,
-    required this.i,
+    Key key,
+    @required this.avatars,
+    @required this.i,
   }) : super(key: key);
 
   final List avatars;

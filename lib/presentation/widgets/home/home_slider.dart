@@ -4,7 +4,7 @@ import 'package:sizer/sizer.dart';
 
 class HomeSlider extends StatelessWidget {
   const HomeSlider({
-    Key? key,
+    Key key,
   }) : super(key: key);
 
   @override

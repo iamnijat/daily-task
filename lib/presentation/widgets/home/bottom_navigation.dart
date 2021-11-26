@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:task_project/pages/modal_page.dart';
+
+import '../../pages/home_page.dart';
+import '../../pages/modal_page.dart';
+import '../../pages/storage_page.dart';
 
 class BottomNavigation extends StatefulWidget {
   const BottomNavigation({
-    Key? key,
+    Key key,
   }) : super(key: key);
 
   @override
@@ -40,6 +43,14 @@ class _BottomNavigationState extends State<BottomNavigation> {
         currentIndex = value;
 
         switch (value) {
+          case 0:
+            Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => const HomePage()));
+            break;
+          case 1:
+            Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => const StoragePage()));
+            break;
           case 2:
             _showModalBottomSheet(context);
             break;

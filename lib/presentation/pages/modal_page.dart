@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
 class ModalPage extends StatelessWidget {
-  const ModalPage({Key? key}) : super(key: key);
+  const ModalPage({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -110,7 +110,16 @@ class ModalPage extends StatelessWidget {
             width: 13.w,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15),
-                color: const Color.fromRGBO(232, 239, 255, 1)),
+                color: const Color.fromRGBO(232, 239, 255, 1),
+                 boxShadow: const [
+                        BoxShadow(
+                          color: Colors.grey,
+                          blurRadius: 15,
+                          spreadRadius: 5,
+                          offset: Offset(8, 8),
+                        ),
+                      ],
+                ),
             child: IconButton(
               onPressed: () {
                 Navigator.of(context).pop();
@@ -123,7 +132,7 @@ class ModalPage extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 10.h,
+            height: 5.h,
           ),
         ],
       ),
