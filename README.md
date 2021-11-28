@@ -8,7 +8,7 @@
 
 # Flutter File Strorage UI
 
-![preview](https://u<img width="1400" alt="taskui" src="https://user-images.githubusercontent.com/42466886/143766945-8cb4b07a-eae7-4d0a-8f94-e60425d3f83b.png">
+<img width="1400" alt="taskui" src="https://user-images.githubusercontent.com/42466886/143766945-8cb4b07a-eae7-4d0a-8f94-e60425d3f83b.png">
 
 ## Configuration for this application
 
