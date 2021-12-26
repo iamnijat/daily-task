@@ -6,7 +6,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/iamnijat/daily-task)
 ![GitHub top language](https://img.shields.io/github/languages/top/iamnijat/daily-task)
 
-# Flutter File Strorage UI
+# Flutter File Storage UI
 
 <img width="1400" alt="taskui" src="https://user-images.githubusercontent.com/42466886/143766945-8cb4b07a-eae7-4d0a-8f94-e60425d3f83b.png">
 
